@@ -1,4 +1,4 @@
-FROM code4sa/aleph:latest
+FROM maquchizi/opengazettes-aleph:latest
 
 ENV ELASTICSEARCH_INDEX aleph
 ENV ALEPH_SETTINGS /aleph/code4sa_aleph_config.py
