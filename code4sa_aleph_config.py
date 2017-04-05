@@ -10,6 +10,12 @@ APP_NAME = os.environ.get('ALEPH_APP_NAME', 'aleph')
 APP_BASEURL = os.environ.get('ALEPH_APP_URL')
 APP_LOGO = os.environ.get('ALEPH_LOGO')
 APP_FAVICON = os.environ.get('ALEPH_FAVICON')
+OPENGAZETTES_URL = os.environ.get('OPENGAZETTES_URL',
+                                  'http://opengazettes.or.ke')
+# Name given to a citizen of the country you are deploying Aleph to
+# e.g Afghan, Indian, Maltese
+# More here: https://en.wikipedia.org/wiki/Lists_of_people_by_nationality
+NATIONALITY = os.environ.get('NATIONALITY', 'Kenyan')
 
 SAMPLE_SEARCHES = ['Eskom', 'SABC', '"call for comment"']
 
