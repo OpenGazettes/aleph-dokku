@@ -2,7 +2,7 @@ FROM maquchizi/opengazettes-aleph:latest
 
 ENV ELASTICSEARCH_INDEX aleph
 ENV ALEPH_SETTINGS /aleph/code4sa_aleph_config.py
-ENV ZA_GAZETTE_ARCHIVE_URI: http://s3-eu-west-1.amazonaws.com/code4sa-gazettes/archive/
+ENV KE_GAZETTE_ARCHIVE_URI: https://s3-eu-west-1.amazonaws.com/cfa-opengazettes-ke/gazettes/
 
 COPY code4sa_aleph_config.py /aleph/code4sa_aleph_config.py
 COPY requirements.txt /tmp/requirements.txt
