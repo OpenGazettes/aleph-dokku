@@ -1,4 +1,3 @@
-newrelic==2.46.0.37
 git+git://github.com/OpenGazettes/aleph_ke_gazette_crawler.git@v0.3
 gevent==1.0.2
 greenlet==0.4.5
