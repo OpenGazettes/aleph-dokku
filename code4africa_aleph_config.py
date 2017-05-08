@@ -78,5 +78,5 @@ OCR_PDF_PAGES = OCR_PDF_PAGES.strip().lower() == "true"
 MAX_CONTENT_LENGTH = int(os.environ.get('ALEPH_MAX_CONTENT_LENGTH',
                                         500 * 1024 * 1024))
 
-GA_TRACKING_ID = 'UA-48399585-47'
+GA_TRACKING_ID = 'UA-33350783-11'
 ALLOW_PEEKING = False
