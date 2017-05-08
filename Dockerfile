@@ -1,4 +1,4 @@
-FROM codeforafrica/opengazettes-aleph:latest
+FROM opengazettes/aleph:latest
 
 ENV ELASTICSEARCH_INDEX aleph
 ENV ALEPH_SETTINGS /aleph/code4africa_aleph_config.py
