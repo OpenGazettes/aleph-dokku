@@ -17,7 +17,8 @@ OPENGAZETTES_URL = os.environ.get('OPENGAZETTES_URL',
 # More here: https://en.wikipedia.org/wiki/Lists_of_people_by_nationality
 NATIONALITY = os.environ.get('NATIONALITY', 'Kenyan')
 
-SAMPLE_SEARCHES = ['Eskom', 'SABC', '"call for comment"']
+SAMPLE_SEARCHES = ['Safaricom', '"issue of new land title deed"',
+                   '"appointment of a liquidator"']
 
 ELASTICSEARCH_URL = os.environ.get('ALEPH_ELASTICSEARCH_URI')
 
