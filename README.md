@@ -1,13 +1,13 @@
 # Aleph in Dokku
 
-This is one of three primary mechanisms for Code for SA to run Aleph inside Dokku. There are three aspects:
+This is one of three primary mechanisms for Code for Africa to run Aleph inside Dokku. There are three aspects:
 
 1. aleph-dokku - web interface
-2. [aleph-dokku-worker](https://github.com/Code4SA/aleph-dokku-worker) - runs background tasks
-3. [aleph-dokku-beat](https://github.com/Code4SA/aleph-dokku-beat) - scheludes background tasks using Celery Beat
+2. [aleph-dokku-worker](https://github.com/opengazettes/aleph-dokku-worker) - runs background tasks
+3. [aleph-dokku-beat](https://github.com/opengazettes/aleph-dokku-beat) - scheludes background tasks using Celery Beat
 
-This repo uses Dokku's Dockerfile support to build an image based on our [customised version of Aleph](https://github.com/Code4SA/aleph) which
-is built using [Docker Hub](hub.docker.com/r/code4sa/aleph/).
+This repo uses Dokku's Dockerfile support to build an image based on our [customised version of Aleph](https://github.com/opengazettes/aleph) which
+is built using [Docker Hub](hub.docker.com/r/opengazettes/aleph/).
 
 Here's a spiffy diagram:
 
@@ -16,7 +16,7 @@ Here's a spiffy diagram:
                | aleph-base  |   |             |                         
                +------+------+   +------+------+                 upstream
                       |                 |            --------------------
-                      |                 |                         code4sa
+                      |                 |                        opengazettes
                       |          +------+------+                         
                       |          | aleph repo  |                         
                       |   +------+             |                         
