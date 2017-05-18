@@ -7,7 +7,7 @@ This is one of three primary mechanisms for Code for Africa to run Aleph inside 
 3. [aleph-dokku-beat](https://github.com/opengazettes/aleph-dokku-beat) - scheludes background tasks using Celery Beat
 
 This repo uses Dokku's Dockerfile support to build an image based on our [customised version of Aleph](https://github.com/opengazettes/aleph) which
-is built using [Docker Hub](hub.docker.com/r/opengazettes/aleph/).
+is built using [Docker Hub](http://hub.docker.com/r/opengazettes/aleph/).
 
 Here's a spiffy diagram:
 
