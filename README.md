@@ -136,4 +136,6 @@ Then push this repo to your dokku remote:
 
     git push dokku
 
-**Note:** You MUST re-push this repo to ensure dokku picks up changes to the underlying code4sa/aleph docker image. Using ``dokku ps:rebuild aleph`` doesn't seem to pick up changes in the docker image.
+**Note:**
+
+If you make changes to the underlying `opengazettes/aleph` image, you must run `docker pull opengazettes/aleph` on the server before running `git push dokku` so that the remote picks up changes to the image.
