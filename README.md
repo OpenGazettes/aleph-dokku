@@ -39,11 +39,6 @@ The aleph repo has an example docker-compose file which sets up all the dependen
 
 You can for example configure it like this from the aleph repo clone directory
 
-Add this volume to the worker service
-```
-        - "./filestore:/aleph/filestore"
-```
-
 Modify the web service like this
 ```
   web:
@@ -57,9 +52,7 @@ Modify the web service like this
       volumes:
         - "/:/host"
         - "./logs:/var/log"
-        - "../aleph-dokku/code4sa_aleph_config.py:/aleph/code4sa_aleph_config.py"
-        - "../aleph-dokku/css:/aleph/code4sa_css"
-        - "../aleph-dokku/templates:/aleph/code4sa_templates"
+        - "../aleph-dokku/code4africa_aleph_config.py:/aleph/code4africa_aleph_config.py"
         - "./filestore:/aleph/filestore"
       environment:
         ALEPH_ELASTICSEARCH_URI: http://elasticsearch:9200/
@@ -98,7 +91,7 @@ FACEBOOK_OAUTH_SECRET=...
 
 # Where and how to store the underlying files:
 ALEPH_ARCHIVE_TYPE=file
-ALEPH_ARCHIVE_BUCKET=code4sa-aleph
+ALEPH_ARCHIVE_BUCKET=cfa-opengazettes-ke
 
 # Or, if 'ALEPH_ARCHIVE_TYPE' configuration is 'file':
 ALEPH_ARCHIVE_PATH=/aleph/filestore
