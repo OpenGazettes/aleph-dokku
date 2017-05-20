@@ -58,7 +58,7 @@ Modify the web service like this
         ALEPH_ELASTICSEARCH_URI: http://elasticsearch:9200/
         ALEPH_DATABASE_URI: postgresql://aleph:aleph@postgres/aleph
         ALEPH_BROKER_URI: amqp://guest:guest@rabbitmq:5672
-        ALEPH_SETTINGS: /aleph/code4sa_aleph_config.py
+        ALEPH_SETTINGS: /aleph/code4africa_aleph_config.py
       env_file:
         - aleph.env
 ```
